@@ -1,19 +1,191 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Imagem do TRE -->
+        <ImageView
+            android:id="@+id/imgTRE"
+            android:layout_width="276dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tre_image" />
+
+        <!-- Nome Completo -->
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome Completo"
+            android:minHeight="48dp" />
+
+        <!-- Título de Eleitor -->
+        <EditText
+            android:id="@+id/etTituloEleitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de Eleitor"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Zona -->
+        <EditText
+            android:id="@+id/etZona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zona"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Seção -->
+        <EditText
+            android:id="@+id/etSecao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seção"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Cidade -->
+        <EditText
+            android:id="@+id/etCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade"
+            android:minHeight="48dp" />
+
+        <!-- Estado -->
+        <Spinner
+            android:id="@+id/spnEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/estados"
+            android:minHeight="48dp" />
+
+        <!-- Prefeito -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha o Prefeito:" />
+
+        <RadioGroup
+            android:id="@+id/rgPrefeito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbPrefeito1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rogério Comuna" />
+            <RadioButton
+                android:id="@+id/rbPrefeito2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulher de Souza" />
+            <RadioButton
+                android:id="@+id/rbPrefeito3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aleatório Menezes" />
+            <RadioButton
+                android:id="@+id/rbPrefeito4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reels da Silva" />
+        </RadioGroup>
+
+        <!-- Verador -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha o Verador:" />
+
+        <RadioGroup
+            android:id="@+id/rgVerador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbVerador1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zé da Padaria" />
+            <RadioButton
+                android:id="@+id/rbVerador2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milei de Floripa" />
+            <RadioButton
+                android:id="@+id/rbVerador3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jane do Ovo" />
+            <RadioButton
+                android:id="@+id/rbVerador4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agnelo" />
+        </RadioGroup>
+        <!-- Partido Favorito -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha o Partido que mais gosta:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbPartido1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PL" />
+            <CheckBox
+                android:id="@+id/cbPartido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT" />
+            <CheckBox
+                android:id="@+id/cbPartido3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PCO" />
+            <CheckBox
+                android:id="@+id/cbPartido4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MBL" />
+            <CheckBox
+                android:id="@+id/cbPartido5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PSOL" />
+            <CheckBox
+                android:id="@+id/cbPartido6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MDB" />
+        </LinearLayout>
+
+        <!-- Botão de Enviar -->
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:backgroundTint="#2039EC"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etNome" type="id" />
+    <item name="etTituloEleitor" type="id" />
+    <item name="etZona" type="id" />
+    <item name="etSecao" type="id" />
+    <item name="etCidade" type="id" />
+    <item name="spnEstado" type="id" />
+    <item name="rgPrefeito" type="id" />
+    <item name="rbPrefeito1" type="id" />
+    <item name="rbPrefeito2" type="id" />
+    <item name="rbPrefeito3" type="id" />
+    <item name="rbPrefeito4" type="id" />
+    <item name="rgVerador" type="id" />
+    <item name="rgVerador1" type="id" />
+    <item name="rgVerador2" type="id" />
+    <item name="rgVerador3" type="id" />
+    <item name="rgVerador4" type="id" />
+    <item name="cbPartido1" type="id" />
+    <item name="cbPartido2" type="id" />
+    <item name="cbPartido3" type="id" />
+    <item name="cbPartido4" type="id" />
+    <item name="cbPartido5" type="id" />
+    <item name="cbPartido6" type="id" />
+    <item name="btnEnviar" type="id" />
+</resources>
